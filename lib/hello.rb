@@ -1,10 +1,10 @@
-def hello_t(names)
-  names.each{ |name| puts name }
-  #   puts "We're in the method!"
-  #   puts "Yielding to the block..."
-  # yield
-  #   puts "We're back in the method!"
-end
+# def hello_t(names)
+#   names.each{ |name| puts name }
+#   #   puts "We're in the method!"
+#   #   puts "Yielding to the block..."
+#   # yield
+#   #   puts "We're back in the method!"
+# end
 
 #
 
@@ -19,3 +19,14 @@ end
 #   end
 #   arr
 # end
+
+def hello_t(array)
+  i = 0
+
+  while i < array.length
+    yield(array[i])
+    i = i + 1
+  end
+
+  array
+end
