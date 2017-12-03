@@ -1,5 +1,5 @@
 def hello_t(names)
-  array.each{ |name| puts name } 
+  names.each{ |name| puts name }
     puts "We're in the method!"
     puts "Yielding to the block..."
   yield
