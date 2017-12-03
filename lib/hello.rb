@@ -9,3 +9,13 @@ end
 #
 
 # call your method here!
+#
+# each(arr) {|name|  puts  name}
+#
+# def each(arr)
+#   i = 0
+#   while arr.size < i
+#     yield(arr)
+#   end
+#   arr
+# end
